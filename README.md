@@ -1,4 +1,5 @@
 # Cursed Racing
+<img width="733" height="441" alt="image" src="https://github.com/user-attachments/assets/9739b0e9-125e-49e8-b420-ff75aad9c832" />
 
 ## Build
 
