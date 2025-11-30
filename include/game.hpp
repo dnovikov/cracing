@@ -17,6 +17,7 @@
 class Game {
     private:
         int max_row, max_col, direction_offset = 0, speed_inc = 0;
+        unsigned int turns = 0;
         bool game_over = false;
         WINDOW *track_win, *info_win;
         Info *info;

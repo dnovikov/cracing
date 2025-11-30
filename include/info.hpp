@@ -13,7 +13,7 @@ class Info {
   public:
     Info();
 
-    void show_info(WINDOW *win, unsigned int speed, unsigned int distance, int direction);
+    void show_info(WINDOW *win, unsigned int speed, unsigned int distance, int direction, unsigned int turns);
     void game_over(WINDOW *win);
 };
 

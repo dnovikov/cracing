@@ -50,7 +50,7 @@ void Game::run(unsigned int seed) {
 
     do {
         this->track->draw(this->track_win);
-        this->info->show_info(this->info_win, this->vehicle->get_speed(), this->vehicle->get_distance(), this->direction_offset);
+        this->info->show_info(this->info_win, this->vehicle->get_speed(), this->vehicle->get_distance(), this->direction_offset, this->turns);
 
         wrefresh(this->track_win);
         wrefresh(this->info_win);
@@ -80,10 +80,11 @@ void Game::run(unsigned int seed) {
                     }
                 }
 
-                this->direction_offset = 0;
                 this->speed_inc = 0;
 
                 this->vehicle->track_distance();
+
+                this->turns++;
 
                 break;
 
