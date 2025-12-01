@@ -24,6 +24,20 @@ TEST_CASE("Vehicle getxy()", "[Vehicle][Method]") {
     }
 }
 
+TEST_CASE("Vehicle get_speed()", "[Vehicle][Method]") {
+    SECTION("Vehicle get_speed() method works") {
+        Vehicle v(1, 2, 3);
+        REQUIRE(v.get_speed() == 3);
+    }
+}
+
+TEST_CASE("Vehicle get_distance()", "[Vehicle][Method]") {
+    SECTION("Vehicle get_distance() method works") {
+        Vehicle v(1, 2, 3);
+        REQUIRE(v.get_distance() == 0);
+    }
+}
+
 TEST_CASE("Vehicle shift_x()", "[Vehicle][Method]") {
     SECTION("Vehicle offset is shifted to left") {
         Vehicle v(1, 2, 3);
