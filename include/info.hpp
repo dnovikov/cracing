@@ -9,12 +9,14 @@
 
 #include <ncursesw/ncurses.h>
 
-class Info {
-  public:
-    Info();
+class Info
+{
+public:
+  Info ();
 
-    void show_info(WINDOW *win, unsigned int speed, unsigned int distance, int direction, unsigned int turns);
-    void game_over(WINDOW *win);
+  void show_info (WINDOW *win, unsigned int speed, unsigned int distance,
+                  int direction, unsigned int turns);
+  void game_over (WINDOW *win);
 };
 
 #endif // INFO_HPP

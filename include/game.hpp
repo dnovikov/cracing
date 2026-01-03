@@ -14,21 +14,22 @@
 
 #define MIN_COLS (INITIAL_TRACK_WIDTH + INFO_WIN_WIDTH + 2)
 
-class Game {
-    private:
-      int max_row, max_col, direction_offset = 0, speed_inc = 0;
-      unsigned int turns = 0;
-      bool game_over = false;
-      WINDOW *track_win, *info_win;
-      Info *info;
-      Track *track;
-      Vehicle *vehicle;
+class Game
+{
+private:
+  int max_row, max_col, direction_offset = 0, speed_inc = 0;
+  unsigned int turns = 0;
+  bool game_over = false;
+  WINDOW *track_win, *info_win;
+  Info *info;
+  Track *track;
+  Vehicle *vehicle;
 
-      void setup(unsigned int seed);
-      void cleanup();
+  void setup (unsigned int seed);
+  void cleanup ();
 
-    public:
-      void run(unsigned int seed);
+public:
+  void run (unsigned int seed);
 };
 
 #endif // GAME_HPP
