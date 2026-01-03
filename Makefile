@@ -13,6 +13,9 @@ endif
 
 all: build
 
+compile-commands:
+	@cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -B build
+
 configure:
 	@echo "Configuring $(CMAKE_BUILD_TYPE)..."
 	@mkdir -p $(BUILD_DIR)
