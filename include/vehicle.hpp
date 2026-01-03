@@ -5,6 +5,7 @@ class Vehicle {
   private:
     unsigned int speed, distance = 0;
     int x, y;
+
   public:
     Vehicle(int x, int y, unsigned int speed);
 
