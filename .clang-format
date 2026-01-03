@@ -1,0 +1,5 @@
+BasedOnStyle: GNU
+Language: Cpp
+InsertNewlineAtEOF: true
+KeepEmptyLinesAtEOF: true
+
